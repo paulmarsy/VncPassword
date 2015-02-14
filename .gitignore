@@ -23,6 +23,11 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
+
+# Other
+x64/
+*.suo
+*.sdf
+*.opensdf
