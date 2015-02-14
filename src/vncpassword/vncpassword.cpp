@@ -38,7 +38,9 @@ int main(int argc, char* argv[])
 	des(encryptedPasswd, encryptedPasswd);
 
 	// Write the key to standard output
-	fprintf(stdout, "%s", encryptedPasswd);
+	for (unsigned int i = 0; i < MAXPWLEN; i++) {
+		fprintf(stdout, "%02x\n", encryptedPasswd[i]);
+	}
 
 	// Zero the memory of the encrypted password
 	memset(encryptedPasswd, 0, sizeof(encryptedPasswd));
