@@ -6,7 +6,8 @@ extern "C" {
 	#include "d3des.h"
 }
 
-#define MAXPWLEN 8
+const static unsigned short MAXPWLEN = 8;
+
 unsigned char FixedKey[8] = { 23, 82, 107, 6, 35, 78, 88, 7 };
 
 int main(int argc, char* argv[])
